@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  display: flex;
+  height: 100vh;
+}
+.frame {
+  /* background-color: rgb(3, 3, 26); */
+  border: 2px solid pink;
+  margin: auto;
+  width: 35%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.frame div.screen {
+  border: solid yellow;
+  height: 40%;
+  padding: 10px;
+  font-size: 30px;
+}
+.calculations {
+  padding-bottom: 10px;
+  border-bottom: solid red;
+}
+.result {
+  position: absolute;
+  top: 35%;
+  right: 36%;
+}
+.frame div.numPad {
+  padding: 10px;
+  border: solid blue;
+  height: 60%;
+  display: grid;
+  grid-template-areas:
+    "a b c d"
+    "f f f f"
+    "f f f f";
+  gap: 10px;
+}
+.numPad div {
+  text-align: center;
+  border: solid red;
+  border-radius: 40%;
+  padding: 10px;
+}
+.c {
+  grid-area: a;
+}
+.division {
+  grid-area: b;
+}
+.multiplication {
+  grid-area: c;
+}
+.delete {
+  grid-area: d;
+}
+.equals {
+  grid-area: e;
+}
