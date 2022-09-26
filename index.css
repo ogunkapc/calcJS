@@ -8,58 +8,79 @@ body {
   height: 100vh;
 }
 .frame {
-  /* background-color: rgb(3, 3, 26); */
-  border: 2px solid pink;
+  background-color: rgb(3, 3, 26);
   margin: auto;
-  width: 35%;
-  height: 500px;
+  width: 30%;
+  padding: 10px;
+}
+.calculator-frame {
+  color: bisque;
+  display: flex;
+  flex-direction: column;
+  border: solid bisque;
+}
+.frame div.screen {
+  /* border: solid yellow; */
+  /* background-color: beige; */
+  /* color: #000000; */
+  max-width: 100%;
+  padding: 10px;
+  font-size: 30px;
   display: flex;
   flex-direction: column;
 }
-.frame div.screen {
-  border: solid yellow;
-  height: 40%;
-  padding: 10px;
-  font-size: 30px;
-}
-.calculations {
+.screen div.calculations {
   padding-bottom: 10px;
-  border-bottom: solid red;
+  border-bottom: solid bisque;
 }
-.result {
-  position: absolute;
-  top: 35%;
-  right: 36%;
+.screen div.result {
+  padding: 10px 0px 0px 0px;
+  text-align: right;
 }
 .frame div.numPad {
+  max-width: 100%;
   padding: 10px;
-  border: solid blue;
-  height: 60%;
-  display: grid;
-  grid-template-areas:
-    "a b c d"
-    "f f f f"
-    "f f f f";
-  gap: 10px;
+  /* border: solid blue; */
 }
-.numPad div {
+.numKeys {
+  display: flex;
+  max-width: 100%;
+  font-size: 25px;
+}
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.col-3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.element {
+  cursor: pointer;
+  padding: 10px;
+  border: solid bisque;
+  max-width: 100%;
   text-align: center;
-  border: solid red;
-  border-radius: 40%;
-  padding: 10px;
 }
-.c {
-  grid-area: a;
+.double-element {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(4, 104, 4);
 }
-.division {
-  grid-area: b;
-}
-.multiplication {
-  grid-area: c;
-}
-.delete {
-  grid-area: d;
-}
-.equals {
-  grid-area: e;
+.operator {
+  color: rgb(14, 187, 14);
 }
